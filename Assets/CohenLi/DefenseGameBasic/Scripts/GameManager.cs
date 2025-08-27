@@ -28,29 +28,7 @@ namespace UDEV.DefenseGameBasic
         {
             if (IsComponentNull()) return;
 
-            // ActivePlayer();
-
             StartCoroutine(SpawnEnemies());
-
-            // guiMng.ShowGameGUI(true);
-            // guiMng.UpdateGameplayCoins();
-            // auCtr.PlayBgm();
-        }
-        public void ActivePlayer()
-        {
-            // if (IsComponentNull()) return;
-
-            // if (m_curPlayer)
-            //     Destroy(m_curPlayer.gameObject);
-
-            // var shopItems = shopMng.items;
-
-            // if (shopItems == null || shopItems.Length <= 0) return;
-
-            // var newPlayerPb = shopItems[Pref.curPlayerId].playerPrefab;
-
-            // if (newPlayerPb)
-            //     m_curPlayer = Instantiate(newPlayerPb, new Vector3(-7f, -1f, 0f), Quaternion.identity);
         }
         // Update is called once per frame
         void Update()

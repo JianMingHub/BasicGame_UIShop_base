@@ -17,12 +17,6 @@ namespace UDEV.DefenseGameBasic
             m_anim = GetComponent<Animator>();
             m_curAtkRate = atkRate;
         }
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
         public bool IsComponentNull()
         {
             return m_anim == null;
@@ -67,7 +61,6 @@ namespace UDEV.DefenseGameBasic
                 m_anim.SetTrigger(Const.DEAD_ANIM);
                 m_isDead = true;
                 gameObject.layer = LayerMask.NameToLayer(Const.DEAD_LAYER); // change layer to dead layer
-                // m_gm.GameOver();
             }
         }
     }
